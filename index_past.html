@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Page</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('5e09dfea4aba11577705450921.jpg') no-repeat center center fixed; /* 设置本地背景图 */
+      background-size: cover; /* 使背景图覆盖整个页面 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: black; /* 设置字体颜色为黑色 */
+      position: relative;
+    }
+    .loading-container {
+      text-align: center;
+    }
+    .loading-title {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+    .loading-authors {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+    .loading-university {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .btn {
+      background-color: #2166ac;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #174a70;
+    }
+    .corner-image {
+      position: absolute;
+      top: 0px; /* 根据需要调整位置 */
+      left: 00px; /* 根据需要调整位置 */
+      width: 200px; /* 根据需要调整大小 */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <div class="loading-title">Quality-aware Masked Diffusion Transformer for Enhanced Music Generation</div>
+    <div class="loading-authors">Anonymous<sup>*1</sup></div>
+    <div class="loading-university"><sup>1</sup>Anonymous University</div>
+    <button class="btn" onclick="window.location.href='summary.html'">View Summary</button>
+    <button class="btn" onclick="window.location.href='audio.html'">View Test Audio</button>
+  </div>
+  <img src="DALL·E 2024-05-26 18.41.33 - A cute cat wearing AirPods in an ancient Chinese style, with the AirPods positioned on its ears, which are on top of its head. The cat has its eyes cl.webp" alt="Corner Image" class="corner-image"> <!-- 右上角的图片 -->
+</body>
+</html>

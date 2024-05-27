@@ -1,69 +1,1120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+  <title>Test Audio</title>
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background: url('5e09dfea4aba11577705450921.jpg') no-repeat center center fixed; /* 设置本地背景图 */
+      background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('4542e076d34a4ca0b9cf49634438e947.jpg') no-repeat center center fixed; /* 设置背景图和渐变 */
       background-size: cover; /* 使背景图覆盖整个页面 */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      color: black; /* 设置字体颜色为黑色 */
-      position: relative;
+      padding: 0;
     }
-    .loading-container {
+    h1 {
+      color: #2166ac;
       text-align: center;
-    }
-    .loading-title {
       font-size: 2.2em;
       margin-bottom: 0.5em;
-      font-weight: bold;
     }
-    .loading-authors {
-      font-size: 1.2em;
+    h2 {
+      color: #4d4d4d; /* 深灰色 */
+      text-align: center;
+      margin-top: 2em;
+    }
+    p {
+      color: #4d4d4d; /* 深灰色文字 */
+      text-align: center;
+      font-size: 1.5em; /* 放大文字 */
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      padding-left: 12%; /* 根据需要调整百分比 */
+      padding-right: 12%; /* 根据需要调整百分比 */
+    }
+    .abstract-text {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: justify;
+    }
+    .pdf-image {
+      display: block;
+      margin: 40px auto;
+      width: 73%; /* 根据需要调整宽度 */
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.9); /* 浅灰色带透明度 */
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #2166ac;
+      text-align: center;
+      font-size: 2.2em;
       margin-bottom: 0.5em;
     }
-    .loading-university {
-      font-size: 1.2em;
-      margin-bottom: 1.5em;
+    h2 {
+      color: #4d4d4d;
+      text-align: center;
+      margin-top: 2em;
     }
-    .btn {
-      background-color: #2166ac;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin: 5px;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
     }
-    .btn:hover {
-      background-color: #174a70;
+    th, td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: rgba(255, 255, 255, 0.9); /* 浅灰色带透明度 */
+      color: #4d4d4d;
     }
-    .corner-image {
-      position: absolute;
-      top: 0px; /* 根据需要调整位置 */
-      left: 00px; /* 根据需要调整位置 */
-      width: 200px; /* 根据需要调整大小 */
-      height: auto;
+    audio {
+      width: 90%;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="loading-container">
-    <div class="loading-title">Quality-aware Masked Diffusion Transformer for Enhanced Music Generation</div>
-    <div class="loading-authors">Anonymous<sup>*1</sup></div>
-    <div class="loading-university"><sup>1</sup>Anonymous University</div>
-    <button class="btn" onclick="window.location.href='summary.html'">View Summary</button>
-    <button class="btn" onclick="window.location.href='audio.html'">View Test Audio</button>
+  <div class="container">
+    <header role="banner">
+      <h1>Quality-aware Masked Diffusion Transformer for</h1>
+      <h1>Enhanced Music Generation</h1>
+      <p>Anonymous<sup>*1</sup></p>
+      <p><sup>1</sup>Anonymous University</p>
+    </header>
+    <section>
+      <h2 id="abstract">
+        <font color="000000">Abstract</font>
+      </h2>
+      <p class="abstract-text">
+        <font color="000000"> In recent years, diffusion-based text-to-music (TTM) generation has gained prominence, offering a novel approach to synthesizing musical content from textual
+          descriptions. Achieving high accuracy and diversity in this generation process
+          requires extensive, high-quality data, which often constitutes only a fraction of
+          available datasets. Within open-source datasets, the prevalence of issues like
+          mislabeling, weak labeling, unlabeled data, and low-quality music waveform significantly hampers the development of music generation models. To overcome
+          these challenges, we introduce a novel quality-aware masked diffusion transformer
+          (QA-MDT) approach that enables generative models to discern the quality of input
+          music waveform during training. Building on the unique properties of musical
+          signals, we have adapted and implemented a MDT model for TTM task, while
+          further unveiling its distinct capacity for quality control. Moreover, we address the
+          issue of low-quality captions with a caption refinement data processing approach.</font>
+      </p>
+      <img src="0520_music-第 1 页.png" alt="PDF Image" class="pdf-image">
+      <img src="截屏2024-05-26 18.31.21.png" alt="PDF Image" class="pdf-image">
+    </section>
+    <main role="main">
+      <section>
+        <h2>Examples of prompts generated by ChatGPT-4.0</h2>
+        <table>
+          <thead>
+            <tr>
+              <th width="25%">Description</th>
+              <th width="25%">Ours (QA-MDT)<br>Params: 675M</th>
+              <th width="25%">AudioLDM2<br>(negative prompt: "low quality")</th>
+              <th width="25%">MusicGEN<br>Params: 1.5B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                A modern synthesizer creating futuristic soundscapes.<br> 
+                <span style="color: #b2182b;">Prompt from demo of AudioLDM2</span>
+              </td>
+              
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_A_modern_synthesizer_creating_futuristic_soundscapes..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/A_modern_synthesizer_creating_futuristic_soundscapes.flac" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/A_modern_synthesizer_creating_futuristic_soundscapes..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Dynamic, vibrant, and stylish music for advertising soundtracks.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_dynamic,_vibrant,_and_stylish_music_for_advertising_soundtracks..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Dynamic__vibrant__and_stylish_music_for_advertising_soundtracks..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Dynamic__vibrant__and_stylish_music_for_advertising_soundtracks..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Shoegaze track with dreamy guitars and reverb effects.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_shoegaze_track_with_dreamy_guitars_and_reverb_effects..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Shoegaze_track_with_dreamy_guitars_and_reverb_effects..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Shoegaze_track_with_dreamy_guitars_and_reverb_effects..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Tranquil piano piece for relaxation and mindfulness.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/high_quality,_Tranquil_piano_and_violin_piece_for_relaxation_and_mindfulness..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Tranquil_piano_piece_for_relaxation_and_mindfulness..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Tranquil_piano_piece_for_relaxation_and_mindfulness..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Chillwave track with nostalgic synths and dreamy atmospheres.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_chillwave_track_with_nostalgic_synths_and_dreamy_atmospheres..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Chillwave_track_with_nostalgic_synths_and_dreamy_atmospheres..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Chillwave_track_with_nostalgic_synths_and_dreamy_atmospheres..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Soft music for video dubbing that evokes a sense of vitality and joy.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_soft_music_for_video_dubbing_that_evokes_a_sense_of_vitality_and_joy..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Soft_music_for_video_dubbing_that_evokes_a_sense_of_vitality_and_joy..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Soft_music_for_video_dubbing_that_evokes_a_sense_of_vitality_and_joy..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Vaudeville piece with humorous lyrics and theatrical presentation.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_vaudeville_piece_with_humorous_lyrics_and_theatrical_presentation..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Vaudeville_piece_with_humorous_lyrics_and_theatrical_presentation..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Vaudeville_piece_with_humorous_lyrics_and_theatrical_presentation..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Violin performance with a sentimental and nostalgic atmosphere.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_violin_performance_with_a_sentimental_and_nostalgic_atmosphere..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Violin_performance_with_a_sentimental_and_nostalgic_atmosphere..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Violin_performance_with_a_sentimental_and_nostalgic_atmosphere..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Gothic rock track with dark atmospheres and intense guitars.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_gothic_rock_track_with_dark_atmospheres_and_intense_guitars..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Gothic_rock_track_with_dark_atmospheres_and_intense_guitars..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Gothic_rock_track_with_dark_atmospheres_and_intense_guitars..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>J-pop tune with upbeat rhythms and catchy melodies.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_j-pop_tune_with_upbeat_rhythms_and_catchy_melodies..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/J-pop_tune_with_upbeat_rhythms_and_catchy_melodies..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/J-pop_tune_with_upbeat_rhythms_and_catchy_melodies..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Celtic melody with traditional instruments and lilting rhythms.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_celtic_melody_with_traditional_instruments_and_lilting_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Celtic_melody_with_traditional_instruments_and_lilting_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Celtic_melody_with_traditional_instruments_and_lilting_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Dancehall tune with infectious rhythms and party vibes.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_dancehall_tune_with_infectious_rhythms_and_party_vibes..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Dancehall_tune_with_infectious_rhythms_and_party_vibes..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Dancehall_tune_with_infectious_rhythms_and_party_vibes..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Glam metal song with anthemic choruses and flashy solos.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_glam_metal_song_with_anthemic_choruses_and_flashy_solos..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Glam_metal_song_with_anthemic_choruses_and_flashy_solos..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Glam_metal_song_with_anthemic_choruses_and_flashy_solos..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Polka tune with lively accordion and cheerful rhythms.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_polka_tune_with_lively_accordion_and_cheerful_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Polka_tune_with_lively_accordion_and_cheerful_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Polka_tune_with_lively_accordion_and_cheerful_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Smooth, soulful saxophone in a relaxed jazz tune for quiet evenings.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/high_quality,_Smooth,_soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Smooth__soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Smooth__soulful_saxophone_in_a_relaxed_jazz_tune_for_quiet_evenings..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <!-- <tr>
+              <td>Smooth jazz tune with velvety saxophone and relaxed rhythms.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_smooth_jazz_tune_with_velvety_saxophone_and_relaxed_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Smooth_jazz_tune_with_velvety_saxophone_and_relaxed_rhythms..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="samples/1_text2audio/3_labelprompt/Burping, eructation.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr> -->
+            <tr>
+              <td>Hip-hop beat with deep bass and sharp electronic samples.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_hip-hop_beat_with_deep_bass_and_sharp_electronic_samples..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Hip-hop_beat_with_deep_bass_and_sharp_electronic_samples..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Hip-hop_beat_with_deep_bass_and_sharp_electronic_samples..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Folk melody with acoustic guitar and harmonica.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_folk_melody_with_acoustic_guitar_and_harmonica..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Folk_melody_with_acoustic_guitar_and_harmonica..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Folk_melody_with_acoustic_guitar_and_harmonica..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Acoustic ballad with heartfelt lyrics and soft piano.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_acoustic_ballad_with_heartfelt_lyrics_and_soft_piano..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Acoustic_ballad_with_heartfelt_lyrics_and_soft_piano..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Drum and bass track with rapid beats and energetic bass lines.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/chatgpt/High_quality,_drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="audioldm/duibi2/Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="musicgen/Drum_and_bass_track_with_rapid_beats_and_energetic_bass_lines..wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Examples of prompts in MusicCaps</h2>
+        <table>
+          <thead>
+            <tr>
+              <th width="25%">Description</th>
+              <th width="25%"> Ours (QA-MDT)<br> Params : 675M</th>
+              <th width="25%">AudioLDM2<br>(negative prompt: "low quality")</th>
+              <th width="25%"> Ground Truth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The clip just contains a high pitched synth melody. The motif keeps going higher in pitch, and then eventually a riser comes in. The combination of these two factors creates a sense of build-up to a climactic moment.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-tKZOl4q1Kw.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-tKZOl4q1Kw.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-tKZOl4q1Kw.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This composition contains an upright bass playing softly along to a harp and strings playing a melody while a male deep voice is softly singing a melody sounding like telling a story. The song sounds like it was made for Christmas. This song may be playing at home having dinner with the whole family.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-tpq_bzSKes.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-tpq_bzSKes.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-tpq_bzSKes.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The song is an instrumental. The song is slow tempo with gentle drum brushes, percussion, bass guitar solo, and piano accompaniment gently. The song is groovy and emotional. The song is possibly a Christian worship song or a smooth jazz song. The audio quality is average.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0EOQco76eXQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0EOQco76eXQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0EOQco76eXQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This audio contains someone playing a piece on cello ranging from the low register up into the higher register. This song may be playing during a live performance.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_3GnNMrDuCs.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_3GnNMrDuCs.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_3GnNMrDuCs.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is a documentary music piece. There is a strings section that is holding a single chord. The bass guitar is repeating an ominous bass line. There is a simple percussion beat in the rhythmic background. The atmosphere has a dramatic feel to it. It feels like a story is about to unfold. The piece suits perfectly as a documentary music piece. It could also fit well in the soundtrack of a mystery movie.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/D7Cvisf3jf8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/D7Cvisf3jf8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/D7Cvisf3jf8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This audio contains people playing rhythms and melodies on bells with sticks. This is an amateur recording.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_G3lYKAITu8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_G3lYKAITu8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_G3lYKAITu8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is a live performance of an alternative R&B music piece. There is a female vocalist singing in a seductive manner in the lead. Later on, a male vocalist starts rapping. There is a groovy bass line in the background. The DJ is scratching the turntable. The rhythmic background is provided by an R&B acoustic drum beat. The atmosphere is sensual and the sound is urban. Sounds of the crowd cheering can be heard in the recording.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_GQnXfIGNKY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_GQnXfIGNKY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_GQnXfIGNKY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The R&B song features a passionate male vocalist singing over a wide funky electric guitar melody, smooth bass guitar, punchy kick and snare hits, shimmering hi hats, snappy rimshots and soft crash cymbals. The rimshots are present in the first half of the loop, while a more energetic second part of the loop consists of punchy snare hits. It sounds emotional and heartfelt, as the vocal is slightly distorted.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_m-N4i-ge28.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_m-N4i-ge28.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_m-N4i-ge28.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>A female vocalist sings this delicate harmony. The tempo is slow with an organ accompaniment. It is soft, mellow, meditative, enigmatic, mysterious, melancholic and haunting. This song is a Modern Classical.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_nrz_BawPMY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_nrz_BawPMY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_nrz_BawPMY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The song track is instrumental. The tempo is medium with temple bells being played to create two distinct tones with long vibrations creating clear overtones. The  soundtrack is calming and deeply religious. The audio track quality is poor with ambient environment noises.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_Slo8QXYOp8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_Slo8QXYOp8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_Slo8QXYOp8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is an instrumental piece with a harmonica as the main lead melodic instrument. High pitched, wobbly sounds are played on the harmonica and contrasted by a deep and full acoustic guitar on which arpeggios are played. There's a sustained pad synth in the background which adds to the overall calming and soothing tone of the song.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_wyELLqwF3w.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_wyELLqwF3w.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_wyELLqwF3w.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This song contains someone strumming chords on an acoustic guitar while playing a harmonica. This song may be playing at a local bar.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/_xURU_-ffC4.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/_xURU_-ffC4.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/_xURU_-ffC4.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>Someone is playing a fast melody on a low bansuri flute along with someone playing tablas and a shrutibox in the background. This song may be playing at a live performance.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-88me9bBzrk.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-88me9bBzrk.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-88me9bBzrk.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The pop rock music features a male voice singing. An electric guitar with a distortion effect on plays plays two chords every two measures. The drums play a strong rhythm and together with a synth bass drive the pulse of the music.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-hSMzrWZCAE.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-hSMzrWZCAE.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-hSMzrWZCAE.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The Electro Pop song features a flat female vocal, occasionally supported by wide background female doubling vocals, singing over quiet drums, groovy and boomy bass, arpeggiated synth melody and some sound effects of the airplane and the explosion. In the second part, the drums cut through the mix more, therefore they are more audible, while the new elements appear, including shimmering bells and simple hi hats. Sounds like a low quality recording, especially because of that first part of the loop.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-m9pH0WXQto.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-m9pH0WXQto.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-m9pH0WXQto.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The low quality recording features a flat male vocal singing over acoustic rhythm guitar chords, after which that same vocal is talking. The song sounds passionate, while the recording, overall, is noisy and in mono.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-UuEBhule84.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-UuEBhule84.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-UuEBhule84.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>A male singer sings this beautiful melody with backup singers in vocal harmony. The song is medium tempo with a percussive string section, strong bass line, guitar lead, steady drumming rhythm , keyboard accompaniment and various percussion clicks. The song is emotional and romantic. The song is of poor audio quality.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-wymN80CiYU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-wymN80CiYU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-wymN80CiYU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is a calm type of song which features a flute being intricately played on top of the various instruments. There is a violin creating a sustained tone underneath. The music feels mystical and enchanting.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/-zOybsEdM5E.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/-zOybsEdM5E.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/-zOybsEdM5E.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is a bluegrass music piece. There is a mandolin playing the main tune as the lead while a banjo and an acoustic guitar are supporting it in the melodic background. There is a joyful feeling to this piece. It could be used in the soundtrack of a movie or a TV show with a rural setting. It could also be used in the background of pastoral social media content.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0-7PyzhzuYQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0-7PyzhzuYQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0-7PyzhzuYQ.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The male mid to high range voice sings loudly and full of emotions pouring out of his soul while strumming some minor chords on the guitar. This recording is of poor quality. This song may be played in an open mic, poetry bar.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0cNYPgD6cEA.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0cNYPgD6cEA.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0cNYPgD6cEA.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>The Rock song features an energetic male vocal singing over repetitive electric guitar melody, groovy bass, punchy kick and snare, shimmering hi hats and energetic crash cymbal. There is a short drum roll that represents a variation in a repetitive loop. It sounds energetic and passionate.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0EzWmAPwoTs.wav"audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0EzWmAPwoTs.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0EzWmAPwoTs.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This is a parody of an electronic music song with a chipmunk vocal effect. There is an edited version of the original track playing in the background that is transposed to a very high pitch.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0L2ndtt60Q8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0L2ndtt60Q8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0L2ndtt60Q8.wav"audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>The song is mostly instrumental with a faint male vocal. The song is medium tempo with a slick drumming rhythm , booming bass line, siren tones and a keyboard playing  arpeggiated tones. The song is followed by camera flash and click tones. The song is exciting with a lot of fanfare. The song is fading with the end credits superimposed with camera flash tones.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0LLlcPiatiU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0LLlcPiatiU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0LLlcPiatiU.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This music is a western classical instrumental. The tempo is slow with a cello solo. The music is soft, rich, deep, mellow, euphonious, pensive, melancholic, emotional and sentimental.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/0nk7utNkHOY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/0nk7utNkHOY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/0nk7utNkHOY.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>This song contains a plucked string instrument playing a melody in the higher register along with an acoustic guitar strumming chords on the backbeat and an upright bass playing a simple melody along to the lead melody. This song may be playing in a video-presentation.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/aNjtfIoVzas.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/aNjtfIoVzas.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/aNjtfIoVzas.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>This is a recording that was done outdoors and later had background music placed over it. There are the sounds of footsteps, and a young male saying something unintelligible. The track placed over it is a high octane rock song with fast electric bass playing, overdriven electric guitar strumming and a rock motif on the electric guitar.</td>
+              <td>
+                <audio controls>
+                  <source src="sel_v4/musiccaps/aTeOMq8ave8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="split/aTeOMq8ave8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="gt_musiccaps/aTeOMq8ave8.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
   </div>
-  <img src="DALL·E 2024-05-26 18.41.33 - A cute cat wearing AirPods in an ancient Chinese style, with the AirPods positioned on its ears, which are on top of its head. The cat has its eyes cl.webp" alt="Corner Image" class="corner-image"> <!-- 右上角的图片 -->
 </body>
+
 </html>
